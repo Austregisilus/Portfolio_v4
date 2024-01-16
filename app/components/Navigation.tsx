@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Navbar,
@@ -6,19 +7,31 @@ import {
   NavbarItem,
   Link,
   Button,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
 } from "@nextui-org/react";
 import Logo from "../../public/Logo.svg";
 import Image from "next/image";
 
 const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const menuItems = ["Home", "Projects", "About me", "Contact"];
+
   return (
     <Navbar
+      onMenuOpenChange={setIsMenuOpen}
       maxWidth="full"
       isBordered
       position="sticky"
       className="mt-2"
       shouldHideOnScroll
     >
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="sm:hidden"
+      />
       <NavbarBrand>
         <Image
           src={Logo}
@@ -28,7 +41,7 @@ const Navigation = () => {
           className="object-contain"
         />
       </NavbarBrand>
-      <NavbarContent justify="center" className="space-x-10">
+      <NavbarContent justify="center" className="hidden gap-4 sm:flex">
         <NavbarItem>
           <Link color="foreground" href="#" className="font-marcellus text-lg">
             Home
@@ -50,14 +63,28 @@ const Navigation = () => {
           </Link>
         </NavbarItem>
       </NavbarContent>
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              color="foreground"
+              className="w-full border-b-1 border-neutral-800 py-4 font-marcellus text-3xl"
+              href="#"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
             as={Link}
             href="#"
             radius="full"
-            variant="bordered"
-            className="px-10 py-6 font-marcellus text-lg"
+            color="primary"
+            variant="ghost"
+            className="px-5 py-3 font-marcellus text-base md:px-10 md:py-6 md:text-lg lg:text-xl"
           >
             Download CV
           </Button>
