@@ -10,7 +10,7 @@ const Hero = () => {
     <section>
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="flex flex-col justify-center py-10">
-          <h1 className="mb-2 w-3/4 pb-2 font-vidaloka text-4xl font-bold capitalize md:text-5xl lg:text-6xl lg:leading-[50px]">
+          <h1 className="mb-2 w-full pb-2 font-vidaloka text-4xl font-bold capitalize md:text-5xl lg:w-3/4 lg:text-6xl lg:leading-[50px]">
             Creating beautiful design and an eye for beautiful Visuals.
           </h1>
           <p className="my-2 w-3/4 py-2 font-marcellus text-base text-white/70 md:text-lg lg:text-xl">
