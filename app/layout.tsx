@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 const rootClassName = "dark";
 
 export const metadata: Metadata = {
-  title: "Arsenios Portfolio",
+  title: "Arsenio's Portfolio",
   description: "A personal portfolio built with Next.js and TypeScript.",
 };
 
