@@ -66,7 +66,7 @@ const Services = () => {
                   }}
                 >
                   This badge was awarded by completing the data analytics
-                  certificate.
+                  certificate by Google on Coursera.
                 </p>
               </div>
             </CardTilt>
@@ -99,8 +99,8 @@ const Services = () => {
                     transform: "translateZ(50px)",
                   }}
                 >
-                  This badge was awarded by completing the front end
-                  certificate.
+                  This badge was awarded by completing the front end certificate
+                  by Meta on Coursera.
                 </p>
               </div>
             </CardTilt>

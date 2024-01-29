@@ -13,9 +13,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Arsenio" />
         <meta name="description" content="Personal Portfolio" />
-        <meta name="keywords" content="portfolio, nextjs, typescript" />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
+        <meta
+          name="keywords"
+          content="portfolio, nextjs, typescript, arsenio, kimani"
+        />
+        <meta name="robots" content="index, nofollow" />
+        <meta name="googlebot" content="index, nofollow" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta property="og:type" content="website" />
