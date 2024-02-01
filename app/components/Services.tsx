@@ -130,7 +130,7 @@ const Services = () => {
               transform: "translateZ(50px)",
             }}
           >
-            <div className="mb-3 mt-2 flex h-20 w-20 items-center justify-center rounded-full bg-black pb-2 pt-2 ring-[1px] ring-neutral-800">
+            <div className="mb-3 mt-2 flex h-20 w-20 items-center justify-center rounded-full bg-black pb-2 pt-2 ring-[1px] ring-neutral-800 hover:bg-neutral-700">
               <IoAnalyticsOutline
                 size={50}
                 className="text-6xl text-purple-800"
