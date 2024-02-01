@@ -12,12 +12,17 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/react";
 import Logo from "../../public/Logo.svg";
+import { FaFileDownload } from "react-icons/fa";
 import Image from "next/image";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "Projects", "About me", "Contact"];
+  const menuItems = ["Home", "Services", "Projects", "Contact"];
+
+  const link = "font-Gudea font-bold text-lg";
+  const linkMobile =
+    "w-full border-b-1 border-neutral-800 py-4 font-Gudea text-3xl";
 
   return (
     <Navbar
@@ -41,9 +46,9 @@ const Navigation = () => {
           className="object-contain"
         />
       </NavbarBrand>
-      <NavbarContent justify="center" className="hidden gap-4 sm:flex">
+      <NavbarContent justify="center" className="hidden gap-10 sm:flex">
         <NavbarItem>
-          <Link color="foreground" href="#" className="font-marcellus text-lg">
+          <Link color="foreground" href="#" className={link}>
             Home
           </Link>
         </NavbarItem>
@@ -52,25 +57,21 @@ const Navigation = () => {
             href="#"
             color="foreground"
             aria-current="page"
-            className="font-marcellus text-lg"
+            className={link}
           >
-            Projects
+            Service
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className="font-marcellus text-lg">
-            About me
+          <Link color="foreground" href="#" className={link}>
+            Projects
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color="foreground"
-              className="w-full border-b-1 border-neutral-800 py-4 font-marcellus text-3xl"
-              href="#"
-            >
+            <Link color="foreground" className={linkMobile} href="#">
               {item}
             </Link>
           </NavbarMenuItem>
@@ -82,9 +83,10 @@ const Navigation = () => {
             as={Link}
             href="#"
             radius="full"
-            color="primary"
-            variant="ghost"
-            className="px-5 py-3 font-marcellus text-base md:px-10 md:py-6 md:text-lg lg:text-xl"
+            variant="shadow"
+            color="secondary"
+            className="font-Fira flex items-center justify-center px-6 py-3 text-base"
+            startContent={<FaFileDownload size={15} />}
           >
             Download CV
           </Button>

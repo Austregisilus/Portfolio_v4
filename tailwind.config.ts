@@ -11,8 +11,9 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        vidaloka: ["Fira Sans Condensed", "sans-serif"],
-        marcellus: ["Marcellus", "sans-serif"],
+        Fira: ["Fira Sans Condensed", "sans-serif"],
+        Roboto: ["Roboto Condensed", "sans-serif"],
+        Gudea: ["Gudea", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
