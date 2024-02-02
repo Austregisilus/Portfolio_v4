@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700;800&family=Gudea:wght@400;700&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@700;800&family=Gudea:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -9,7 +9,7 @@
 } */
 
 html {
-  font-size: 12px;
+  font-size: 75%;
 }
 
 ::selection {
