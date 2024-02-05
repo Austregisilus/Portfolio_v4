@@ -21,7 +21,7 @@ const Services = () => {
   const chip = "font-Gudea my-2 mr-1 bg-purple-900 text-sm md:text-base";
 
   return (
-    <section className="my-4">
+    <section className="my-4" id="service">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="grid place-content-between">
           <div className="relative mt-4 flex flex-col justify-center py-10">

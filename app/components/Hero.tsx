@@ -7,7 +7,7 @@ import CardTilt from "./UI/CardTilt";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="home">
       <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2">
         <div className="flex flex-col justify-center py-10">
           <h1 className="mb-2 w-full pb-2 font-Fira text-4xl font-bold capitalize md:text-5xl lg:text-6xl">

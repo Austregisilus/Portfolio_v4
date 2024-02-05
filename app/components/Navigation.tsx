@@ -18,7 +18,28 @@ import Image from "next/image";
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = ["Home", "Services", "Projects", "Contact"];
+  const menuItems = [
+    {
+      index: 1,
+      name: "Home",
+      link: "#home",
+    },
+    {
+      index: 2,
+      name: "Services",
+      link: "#service",
+    },
+    {
+      index: 3,
+      name: "Projects",
+      link: "#project",
+    },
+    {
+      index: 4,
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
 
   const link = "font-Gudea font-bold text-lg";
   const linkMobile =
@@ -48,13 +69,13 @@ const Navigation = () => {
       </NavbarBrand>
       <NavbarContent justify="center" className="hidden gap-10 sm:flex">
         <NavbarItem>
-          <Link color="foreground" href="#" className={link}>
+          <Link color="foreground" href="#home" className={link}>
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            href="#"
+            href="#service"
             color="foreground"
             aria-current="page"
             className={link}
@@ -63,16 +84,16 @@ const Navigation = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" className={link}>
-            Projects
+          <Link color="foreground" href="#contact" className={link}>
+            Contact
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link color="foreground" className={linkMobile} href="#">
-              {item}
+        {menuItems.map((item) => (
+          <NavbarMenuItem key={item.index}>
+            <Link color="foreground" className={linkMobile} href={item.link}>
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}
@@ -85,7 +106,7 @@ const Navigation = () => {
             radius="full"
             variant="shadow"
             color="secondary"
-            className="font-Fira flex items-center justify-center px-6 py-3 text-base"
+            className="flex items-center justify-center px-6 py-3 font-Fira text-base"
             startContent={<FaFileDownload size={15} />}
           >
             Download CV
