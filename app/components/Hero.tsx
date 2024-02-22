@@ -14,7 +14,7 @@ const Hero = () => {
             Data + Design + Development. <br />
             The Trifecta.
           </h1>
-          <p className="my-2 w-3/4 py-2 font-Gudea text-base text-white/60 md:text-lg">
+          <p className="my-2 py-2 font-Gudea text-base text-white/60 md:text-lg">
             I bridge the gap between raw data and stunning user experiences. I
             blend data analysis, web development, and UI/UX design to create
             solutions that are both beautiful and insightful.
