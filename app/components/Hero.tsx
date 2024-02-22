@@ -16,9 +16,7 @@ const Hero = () => {
           </h1>
           <p className="my-2 w-3/4 py-2 font-Gudea text-base text-white/60 md:text-lg">
             I bridge the gap between raw data and stunning user experiences. I
-            blend{" "}
-            <span className="text-white">data analysis, web development,</span>{" "}
-            and <span className="text-white">UI/UX design</span> to create
+            blend data analysis, web development, and UI/UX design to create
             solutions that are both beautiful and insightful.
           </p>
 
@@ -74,14 +72,12 @@ const Hero = () => {
                 transform: "translateZ(50px)",
               }}
             >
-              Driven by a passion for building{" "}
-              <span className="text-white">user-centric digital solutions</span>
-              , I'm an aspiring graduate eager to refine my skills in front-end
+              Driven by a passion for building user-centric digital solutions ,
+              I'm an aspiring graduate eager to refine my skills in front-end
               development and data analysis within a forward-thinking
               corporation. While my recent IT support internship at KPLC
               provided valuable technical experience, I'm excited to delve
-              deeper into areas like{" "}
-              <span className="text-white">"Creative Design"</span>.
+              deeper into areas like Creative Design.
             </p>
           </div>
         </CardTilt>
