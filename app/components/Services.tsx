@@ -21,10 +21,10 @@ const Services = () => {
   const chip = "font-Gudea my-2 mr-1 bg-purple-900 text-sm md:text-base";
 
   return (
-    <section className="my-4" id="service">
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+    <section className="my-4 lg:my-6" id="service">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
         <div className="grid place-content-between">
-          <div className="relative mt-4 flex flex-col justify-center py-10">
+          <div className="relative mt-4 grid place-content-center place-items-center py-10">
             <h1 className="mb-2 w-full pb-2 font-Fira text-4xl font-bold capitalize md:text-5xl lg:text-6xl">
               Skills ranging from data <br /> analysis to web <br />{" "}
               development.
@@ -44,7 +44,7 @@ const Services = () => {
               aria-hidden
             />
           </div>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-6">
             <CardTilt className="rounded-2xl border-[1px] border-neutral-800 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-yellow-500 via-black to-neutral-900 px-4 py-6">
               <div
                 style={{
@@ -54,10 +54,10 @@ const Services = () => {
                 <Image
                   src={analytics}
                   alt="Data analysis badge"
-                  width={125}
-                  height={125}
+                  width={150}
+                  height={160}
                   loading="lazy"
-                  className="mx-auto"
+                  className="mx-auto object-contain"
                 />
               </div>
               <div>
@@ -89,9 +89,9 @@ const Services = () => {
                 <Image
                   src={developer}
                   alt="Developer badge"
-                  width={125}
+                  width={130}
                   height={125}
-                  className="mx-auto"
+                  className="mx-auto object-contain"
                 />
               </div>
               <div>

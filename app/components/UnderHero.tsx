@@ -14,7 +14,7 @@ const UnderHero = () => {
 
   return (
     <section className="h-auto">
-      <div className="mt-4 grid grid-cols-12 gap-4">
+      <div className="mt-4 grid grid-cols-12 gap-4 lg:mt-6 lg:gap-6">
         <CardTilt className="col-span-12 rounded-2xl border-[1px] border-neutral-800 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900 via-black to-neutral-900 px-4 py-4 sm:col-span-6 lg:col-span-3">
           <div
             style={{
@@ -87,7 +87,7 @@ const UnderHero = () => {
         </CardTilt>
         <CardTilt className="col-span-12 flex flex-col justify-center rounded-2xl border-[1px] border-neutral-800 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-gray-900 via-black to-neutral-900 px-10 py-4 lg:col-span-6">
           <Chip
-            className="font-Gudea my-4 bg-gray-900 py-2 text-sm md:text-base"
+            className="my-4 bg-gray-900 py-2 font-Gudea text-sm md:text-base"
             style={{
               transform: "translateZ(50px)",
             }}

@@ -9,7 +9,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="grid grid-cols-1 gap-4 overflow-clip rounded-2xl border-1 border-neutral-800 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 overflow-clip rounded-2xl border-1 border-neutral-800 lg:grid-cols-2 lg:gap-6">
         <div className="flex flex-col justify-center bg-neutral-900 px-4 py-10">
           <h1 className="mb-2 w-full pb-2 font-Fira text-4xl font-bold capitalize md:text-5xl lg:text-6xl">
             Let's work together.

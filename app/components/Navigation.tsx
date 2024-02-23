@@ -67,7 +67,7 @@ const Navigation = () => {
           className="object-contain"
         />
       </NavbarBrand>
-      <NavbarContent justify="center" className="hidden gap-10 sm:flex">
+      <NavbarContent justify="center" className="hidden gap-8 sm:flex">
         <NavbarItem>
           <Link color="foreground" href="#home" className={link}>
             Home
